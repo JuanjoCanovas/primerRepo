@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/favicon.png">
+    <title>DFitness Portal de Noticias Fitness</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../image/logof.png" alt="Logo D Fitness portal de noticias fitness" class="logoHeader">
+        <h1>DFITNESS</h1>
+        <div class="imagenesHeader">
+            <img src="../image/Zoom-icon.png" alt="Buscar en el sitio de Fitness" class="imagenHeader">
+            <a href="./registracion.html"><img src="../image/usuario.png" alt="Icono para ir a registrarse"
+                    class="imagenHeader"></a>
+        </div>
+    </header>
+    <!-- Final del Header-->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./articulos.html">Articulos</a></li>
+            <li><a href="./noticias.html">Noticias</a></li>
+            <li><a href="./tienda.html">Tienda</a>
+                <ul>
+                    <li><a href="./tienda.html#indumentaria" class="submenu">Indumentaria</a></li>
+                    <li><a href="./tienda.html#suplementos" class="submenu">Suplementos</a></li>
+                    <li><a href="./tienda.html#maquinas" class="submenu">Maquinarias</a></li>
+                    <li><a href="./tienda.html#equipamientos" class="submenu">Equipamiento</a></li>
+                </ul>
+            </li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Final del menu-->
+    <main>
+        <section>
+            <figure class="contenedorUsuarioRegistrado">
+                <img src="../image/Usuarios-registrados-icon.png" alt="Imagen de acceso para usuarios registrados"
+                    class="imagenUsuarioRegistrado">
+                <figcaption class="parrafoUsuarioRegistrado">Usuarios Registrados</figcaption>
+            </figure>
+        </section>
+        <section class="contenedorDatosContacto bordeArticulo fondoCeleste">
+            <h3>Sino tienes una cuenta regitrate aqui:</h3>
+            <form action="envio.php" method="get">
+                <fieldset class="contenedorDatosContacto">
+                    <legend class="parrafoFomularioContactoLegend">Informacion de Registro</legend>
+                    <label for="nombre" class="parrafoFomularioContacto">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Juan Perez" required>
+                    <label for="email" class="parrafoFomularioContacto">Email:</label>
+                    <input type="email" id="email" placeholder="mail@mail.com" required>
+                    <label for="password" class="parrafoFomularioContacto">Password:</label>
+                    <input type="password" name="clave" id="password" placeholder="Entre 8 a 12 caracteres" required>
+                    <label for="passwordcopy" class="parrafoFomularioContacto">Repite tu Password:</label>
+                    <input type="password" name="clavecopy" id="passwordcopy" placeholder="Entre 8 a 12 caracteres"
+                        required>
+                    <label for="pais" class="parrafoFomularioContacto">En que pais estas</label>
+                    <select name="" id="pais">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <div class="contenedorContacto">
+                        <p class="parrafoFomularioContacto">Genero:</p>
+                        <label for="masculino" class="parrafoFomularioContactoGenero">Masculino</label>
+                        <input type="radio" id="masculino" value="genero" name="genero">
+                        <label for="femenino" class="parrafoFomularioContactoGenero">Femenino</label>
+                        <input type="radio" name="genero" id="femenino" value="genero">
+                        <label for="otro" class="parrafoFomularioContactoGenero">Otro</label>
+                        <input type="radio" id="otro" value="genero" name="genero">
+                    </div>
+                    <label for="fechanacimiento" class="parrafoFomularioContacto">Fecha de Nacimiento:</label>
+                    <input type="date" name="nacimiento" id="fechanacimiento" placeholder="dd/mm/aaaa">
+                    <div class="contenedorContacto">
+                        <label for="privacidad" class="parrafoLegales">He leído y entendido las condiciones de uso y protección de datos y mis
+                            preferencias de privacidad</label>
+                        <input type="checkbox" name="acuerdo" id="privacidad" required>
+                    </div>
+                </fieldset>
+                <input type="reset" value="Cancelar" class="botonesContacto fondoVerde">
+                <input type="submit" value="Enviar" class="botonesContacto fondoVerde">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <p class="parrafoFooter">Seguinos en:</p>
+            <a href="https://www.facebook.com" target="_blank"><img src="../image/facebook.png"
+                    alt="link a la pagina de Facebook" class="logoFooter">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../image/Instagram-icon.png" alt="link a la pagina de Instagram" class="logoFooter">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../image/twitter.png" alt="link a la pagina de Twitter" class="logoFooter">
+        </section>
+    </footer>
+    <!-- Final del footer-->
+</body>
+
+</html>

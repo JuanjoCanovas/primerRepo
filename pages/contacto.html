@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/favicon.png">
+    <title>DFitness Portal de Noticias Fitness</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../image/logof.png" alt="Logo D Fitness portal de noticias fitness" class="logoHeader">
+        <h1>DFITNESS</h1>
+        <div class="imagenesHeader">
+            <img src="../image/Zoom-icon.png" alt="Buscar en el sitio de Fitness" class="imagenHeader">
+            <a href="./registracion.html"><img src="../image/usuario.png" alt="Icono para ir a registrarse"
+                    class="imagenHeader"></a>
+        </div>
+    </header>
+    <!-- Final del Header-->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./articulos.html">Articulos</a></li>
+            <li><a href="./tienda.html">Tienda</a>
+                <ul>
+                    <li><a href="./tienda.html#indumentaria" class="submenu">Indumentaria</a></li>
+                    <li><a href="./tienda.html#suplementos" class="submenu">Suplementos</a></li>
+                    <li><a href="./tienda.html#maquinas" class="submenu">Maquinarias</a></li>
+                    <li><a href="./tienda.html#equipamientos" class="submenu">Equipamiento</a></li>
+                </ul>
+            </li>
+            <li><a href="./noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+    <!-- Final del menu-->
+    <main class="fondoCeleste">
+        <section>
+            <article class="contenedorPresentacionContacto">
+                <h2>Somos Dfitness</h2>
+                <p class="parrafoPresentacionContacto"><em>Hacemos un portal de noticias, con el objetivo de traerte las
+                        novedades del mundo fitness.</em></p>
+                <ul class="listaPresentacionContacto">
+                    <li>Solo publicamos articulos con informacion comprobada.</li>
+                    <li>Promovemos el ejercio fisico, la alimentacion equilibrada y un estilo de vida saludable.</li>
+                    <li>Incentivamos a verse a uno mismo como una persona valiosa, integra y equilibrada.</li>
+                </ul>
+                <img src="../image/imagenContacto.jpg" alt="imagen mujer y hombre ejercitando"
+                    class="imagenPresentacionContacto">
+            </article>
+        </section>
+        <!--Final de texto de presentacion-->
+        <section class="contenedorDatosContacto bordeArticulo">
+            <div class="contenedorContacto">
+                <img src="../image/Whatsapp-icon.png" alt="logo de Whatsapp" class="imagenDatosContacto">
+                <p class="parrafoDatosContacto"> 54 351 6119001 </p>
+            </div>
+            <div class="contenedorContacto">
+            <img src="../image/email-icon.png" alt="logo de email" class="imagenDatosContacto">
+            <p class="parrafoDatosContacto"> dfitness@gmail.com </p>
+            </div>
+        </section>
+        <!--Imagen de y datos de Contacto-->
+        <section>
+            <form action="envio.php">
+                <fieldset class="contenedorDatosContacto bordeArticulo">
+                    <legend class="parrafoFomularioContactoLegend">Mensaje para Dfitness</legend>
+                    <label for="nombre" class="parrafoFomularioContacto">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Juan Perez" required>
+                    <label for="email" class="parrafoFomularioContacto">Email:</label>
+                    <input type="email" id="email" placeholder="mail@mail.com" required>
+                    <label for="mensaje" class="parrafoFomularioContacto">Mensaje:</label>
+                    <textarea name="" id="mensaje" cols="180" rows="10" placeholder="Aqui tu mensaje"
+                        required></textarea>
+                <div>
+                    <input type="reset" value="Cancelar" class="botonesContacto fondoVerde">
+                    <input type="submit" value="Enviar" class="botonesContacto fondoVerde">
+                </div>
+                </fieldset>
+            </form>
+        </section>
+        <!-- fin de formulario de contacto-->
+    </main>
+    <footer>
+        <section class="footer">
+            <p class="parrafoFooter">Seguinos en:</p>
+            <a href="https://www.facebook.com" target="_blank"><img src="../image/facebook.png"
+                    alt="link a la pagina de Facebook" class="logoFooter">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../image/Instagram-icon.png" alt="link a la pagina de Instagram" class="logoFooter">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../image/twitter.png" alt="link a la pagina de Twitter" class="logoFooter">
+        </section>
+    </footer>
+    <!-- Final del footer-->
+</body>
+
+</html>
